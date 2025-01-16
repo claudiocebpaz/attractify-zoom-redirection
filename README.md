@@ -42,10 +42,11 @@ src/
     ```
     npm run dev
 ## Configuration
-The settings for the application are stored in the src/config/config.json file. Modify the following fields as needed:
+The settings for the application are stored in the src/config/config.json file. 
+
+Modify the following fields as needed:
 ```
 {
-  "redirectUrl": "https://www.example.com",
-  "initialCountdown": 2                    
+  "redirectUrl": "https://www.example.com",  // URL to redirect the user
+  "initialCountdown": 2                     // Countdown time in seconds
 }
-
