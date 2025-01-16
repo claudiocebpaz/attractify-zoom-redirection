@@ -1,16 +1,16 @@
-// import React from "react";
+import React from "react";
 import CountdownRedirect from "./components/CountdownRedirect";
 import RedirectButton from "./components/RedirectButton";
-
-// Configuración global de la redirección
-const redirectUrl = "https://www.example.com";
-const initialCountdown = 2; // Tiempo en segundos
+import config from "./config.json"; // Importa el archivo JSON
 
 const App = () => {
   return (
     <div className="h-screen flex flex-col items-center justify-center bg-gray-200">
-      <RedirectButton redirectUrl={redirectUrl} />
-      <CountdownRedirect redirectUrl={redirectUrl} initialCountdown={initialCountdown} />
+      <RedirectButton redirectUrl={config.redirectUrl} />
+      <CountdownRedirect
+        redirectUrl={config.redirectUrl}
+        initialCountdown={config.initialCountdown}
+      />
     </div>
   );
 };
