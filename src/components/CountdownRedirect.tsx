@@ -28,7 +28,7 @@ const CountdownRedirect = ({ redirectUrl, initialCountdown }: CountdownRedirectP
   }, [redirectUrl, initialCountdown]);
 
   return (
-    <div className="flex items-center space-x-4 my-4">
+    <div className="flex items-center space-x-4 my-4 ">
       <Spinner />
       <span className="text-xl font-medium text-gray-700">
         Joining in {countdown} second{countdown !== 1 && "s"}...

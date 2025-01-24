@@ -1,5 +1,5 @@
 import React from "react";
-import imageSrc from "../assets/gradientlogo.svg"; // Importa la imagen
+import imageSrc from "../assets/gradientlogo.png"; // Importa la imagen
 
 const CenteredImageAboveButton = () => {
   return (
